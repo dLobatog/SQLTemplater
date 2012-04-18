@@ -1,10 +1,12 @@
+= SQLTemplater 
+
 Use ActionView::Resolver to store templates in a SQL database and retrieving 
 them on request. It automatically caches all the templates using Rails' 3 
 cached method. Bear in mind that in order to have only one shared "Resolver"instance, 
 which is the object that handles caching, I used a Singleton, so call it in
 your controllers using "Resolver.instance" instead of "Resolver.new"
 
-Usage:
+== Usage:
 
 Copy the sql_templates model (app/models/sql_template.rb) to your directory.
 Add this to any of your controllers that you wish to store a view in the database
